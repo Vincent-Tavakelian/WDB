@@ -1,102 +1,38 @@
-@import url("https://fonts.googleapis.com/css?family=Lora|Roboto");
-@import url("components/container.css");
-@import url("components/avatar.css");
-@import url("components/button.css");
-@import url("components/banner.css");
-@import url("components/card.css");
-@import url("components/galerie.css");
-
-body{
-	font-family: Lora, serif;
-	font-size: 18px;
-	margin: 0px;
-	background-color: #ecf4f3;
+.cards {
+	display: table-column-group;
+	flex-wrap: wrap;
 }
 
-
-h1, h2, h3{
-	font-family: Source Sans Pro, sans-serif;
-	font-weight: lighter;
-	font-size: 16px;
-}
-
-
-h2{
-	text-align: right;
-	margin-bottom: 50px;
+.card {
+	padding: 20px;
+	box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 3px;
+	margin: 10px 10px;
+	flex-basis: 270px;
+	flex-grow: 1;
 
 }
 
-h3{
-	font-size: 30px;
-	font-weight: bold;
-}
-
-a{
-	text-decoration: none;	
-}
-
-a:hover{
-	color: black;
-	background-color:#e3e7f1;
-
-}
-div.bleu{
-	position:relative;
-	width:600px;
-    height: auto;
-	cursor:pointer;
-	margin: 0px auto;
-}
-
-div.bleu img{
-	width: 100%;
-	height:auto;
+.card img {
+	width: 150px;
 	border-radius: 6px;
 }
 
-div.bleu div.desc{
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	opacity:0;
-	background-color:rgba(24,24,24,0.2);
-	color:#fefefe;
-	transition:all .4s;
+.card h3 {
+	flex-grow: 1;
+	padding-left: 20px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.h4 {
+	font-family: Roboto;
 	text-align: center;
-}
-
-div.desc p{
-	font-family:roboto;
-    line-height: 100%;
-    overflow:inherit;
-    font-size:13px;
-    padding-left: 10px;
-    line-height: 20px;
-}
-
-div.desc h3{
-	font-size:15px;
-	font-weight:bold;
-	color:#f0dd92;
-	padding-left: 10px;
 
 }
-
-div.bleu:hover div.desc{
-	opacity:1;
-}
-
-h4{
-
-  font-family: 'Indie Flower', cursive;
-  font-size: 32px;
-  text-align: center;
-}
-
-
 
 
 
